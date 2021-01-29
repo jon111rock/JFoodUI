@@ -34,6 +34,6 @@
 <style lang="scss">
 @import "./assets/all.scss";
 body {
-  // background-color: rgb(172, 206, 34);
+  background-color: #fdf5e0;
 }
 </style>
