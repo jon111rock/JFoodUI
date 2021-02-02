@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Banner -->
-    <section class="banner mb-5">
+    <section class="banner">
       <div
         id="carouselExampleControls"
         class="carousel slide "

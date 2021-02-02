@@ -2,39 +2,27 @@
   <div id="app">
     <!-- header -->
     <section class="header">
-      <div class="container mt-2" style="background:#fdf5e0;">
+      <!-- Navbar -->
+      <div
+        class="container-fluid  fixed-top shadow-sm p-1"
+        style="background: #fdf5e0;"
+      >
         <div class="row">
-          <!-- logo -->
-          <div class="col-sm-12 col-md logo">
-            <router-link to="/">
-              <a href="#">
-                <img
-                  src="./assets/img/logo.png"
-                  class="img-fluid"
-                  style="width:100px;height:100px"
-                />
-              </a>
-            </router-link>
-          </div>
-          <!-- Navbar -->
-          <div class="col-sm-12 col-md-10 mt-3 ">
-            <!-- social logo -->
-            <div class="row">
-              <div class="col d-flex justify-content-md-end">
-                <div class="mr-5">
-                  <a href="#" class="mr-1">
-                    <i class="fab fa-facebook-square fa-lg"></i>
-                  </a>
-                  <a href="#" class="">
-                    <i class="fab fa-line fa-lg" style="color:green;"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-1 col-md-12">
             <div class="col">
               <nav class="navbar navbar-expand-sm navbar-light ">
+                <!-- logo -->
+                <router-link to="/">
+                  <a href="#">
+                    <img
+                      src="./assets/img/logo.png"
+                      class="img-fluid"
+                      style="width:80px;height:80px"
+                    />
+                  </a>
+                </router-link>
                 <button
-                  class="navbar-toggler mx-auto"
+                  class="navbar-toggler "
                   type="button"
                   data-toggle="collapse"
                   data-target="#navbarTogglerDemo01"
@@ -44,8 +32,9 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0 h5">
+                  <ul class="navbar-nav ml-auto mt-lg-0 h5">
                     <li class="nav-item">
                       <a class="nav-link font-weight-bold" href="#">關於我們</a>
                     </li>
@@ -68,6 +57,26 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link font-weight-bold" href="#">聯絡我們</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="nav-link font-weight-bold">
+                        <!-- social logo -->
+                        <div class="ml-5">
+                          <div class="d-flex justify-content-md-end">
+                            <div class="mr-5">
+                              <a href="#" class="mr-1">
+                                <i class="fab fa-facebook-square fa-lg "></i>
+                              </a>
+                              <a href="#" class="">
+                                <i
+                                  class="fab fa-line fa-lg"
+                                  style="color:green;"
+                                ></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </li>
                   </ul>
                 </div>
