@@ -3,7 +3,7 @@
     <!-- header -->
     <header class="header sticky-top">
       <!-- Navbar -->
-      <div class="container-fluid  shadow-sm p-1" style="background: #fdf5e0;">
+      <div class="container-fluid  shadow-sm " style="background: #fdf5e0;">
         <div class="row">
           <div class="col-sm-1 col-md-12">
             <div class="col">
@@ -33,7 +33,11 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <ul class="navbar-nav ml-auto mt-lg-0 h5">
                     <li class="nav-item">
-                      <a class="nav-link font-weight-bold" href="#">關於我們</a>
+                      <router-link to="/about">
+                        <a class="nav-link font-weight-bold" href="#"
+                          >關於我們</a
+                        >
+                      </router-link>
                     </li>
                     <li class="nav-item">
                       <router-link to="/news">
@@ -50,10 +54,18 @@
                       </router-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link font-weight-bold" href="#">外送服務</a>
+                      <router-link to="/delivery">
+                        <a class="nav-link font-weight-bold" href="#"
+                          >外送服務</a
+                        >
+                      </router-link>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link font-weight-bold" href="#">聯絡我們</a>
+                      <router-link to="/contact">
+                        <a class="nav-link font-weight-bold" href="#"
+                          >聯絡我們</a
+                        >
+                      </router-link>
                     </li>
                     <li class="nav-item">
                       <div class="nav-link font-weight-bold">
@@ -110,4 +122,7 @@
 body {
   background-color: #fdf5e0;
 }
+</style>
+<style lang="css" scoped>
+@import "./assets/css/style.css";
 </style>

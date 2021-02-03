@@ -68,7 +68,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <img src="../assets/img/logo.png" class="about-img" />
+            <img src="../assets/img/logo.png" class="product-img" />
           </div>
         </div>
       </div>
@@ -78,33 +78,63 @@
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col">
-            <h2 class="txt-tw">產品列表</h2>
+            <h2 class="txt-tw">人氣商品</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 product">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
-            <h3>test</h3>
+            <img
+              src="../assets/img/青蔥資料/青蔥美味控肉.jpg"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="mt-1">青蔥美味控肉</h5>
+            <small>NT$199</small>
           </div>
           <div class="col-md-4 product">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
-            <h3>test</h3>
+            <img
+              src="../assets/img/青蔥資料/青蔥美味控肉.jpg"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="mt-1">青蔥美味控肉</h5>
+            <small>NT$199</small>
           </div>
           <div class="col-md-4 product">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
-            <h3>test</h3>
+            <img
+              src="../assets/img/青蔥資料/青蔥美味控肉.jpg"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="mt-1">青蔥美味控肉</h5>
+            <small>NT$199</small>
           </div>
           <div class="col-md-4 product">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
-            <h3>test</h3>
+            <img
+              src="../assets/img/青蔥資料/青蔥美味控肉.jpg"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="mt-1">青蔥美味控肉</h5>
+            <small>NT$199</small>
           </div>
           <div class="col-md-4 product">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
-            <h3>test</h3>
+            <img
+              src="../assets/img/青蔥資料/青蔥美味控肉.jpg"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="mt-1">青蔥美味控肉</h5>
+            <small>NT$199</small>
           </div>
           <div class="col-md-4 product">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
-            <h3>test</h3>
+            <img
+              src="../assets/img/青蔥資料/青蔥美味控肉.jpg"
+              alt=""
+              class="product-img"
+            />
+            <h5 class="mt-1">青蔥美味控肉</h5>
+            <small>199$NT</small>
           </div>
         </div>
         <div class="row">
@@ -129,12 +159,12 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
+            <img src="../assets/img/logo.png" alt="" class="product-img" />
             <h2>news-1</h2>
             <small>測試測試測試</small>
           </div>
           <div class="col-md-6">
-            <img src="../assets/img/logo.png" alt="" class="about-img" />
+            <img src="../assets/img/logo.png" alt="" class="product-img" />
             <h2>news-1</h2>
             <small>測試測試測試</small>
           </div>
@@ -181,30 +211,5 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.router-link {
-  color: white;
-}
-.txt-tw {
-  margin-top: 2rem;
-  color: #809b17;
-}
-.about-img {
-  width: 250px;
-  height: 250px;
-}
-.product {
-  margin-top: 1.1em;
-}
-.footer {
-  padding-top: 1.1em;
-  background-color: gray;
-  color: white;
-}
-.banner-sizing {
-  height: 70vh;
-}
-.nav-logo-sizing {
-  width: 5vw;
-  height: 15vh;
-}
+@import "../assets/css/style.css";
 </style>

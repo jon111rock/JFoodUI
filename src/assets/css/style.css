@@ -1,0 +1,39 @@
+.router-link {
+  color: white;
+}
+.txt-tw {
+  margin-top: 2rem;
+  color: #809b17;
+}
+/* product */
+.product-img {
+  width: 250px;
+  height: 250px;
+}
+.product {
+  margin-top: 1.1em;
+}
+.product h3 {
+  color: #666666;
+}
+
+.footer {
+  padding-top: 1.1em;
+  background-color: gray;
+  color: white;
+}
+.banner-sizing {
+  height: 70vh;
+}
+
+/* navbar */
+.nav-logo-sizing {
+  width: 5vw;
+  height: 15vh;
+}
+.active {
+  text-decoration: underline !important;
+}
+.nav-link {
+  color: #666666 !important;
+}

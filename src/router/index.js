@@ -24,6 +24,21 @@ const routes = [
     name: "News",
     component: () => import("../views/News.vue"),
   },
+  {
+    path: "/about",
+    name: "About",
+    component: () => import("../views/About.vue"),
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: () => import("../views/Contact.vue"),
+  },
+  {
+    path: "/delivery",
+    name: "Delivery",
+    component: () => import("../views/Delivery.vue"),
+  },
 ];
 
 const router = new VueRouter({
