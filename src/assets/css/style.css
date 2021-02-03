@@ -9,6 +9,7 @@
 .product-img {
   width: 250px;
   height: 250px;
+  box-shadow: 5px 3px 5px gray;
 }
 .product {
   margin-top: 1.1em;

@@ -33,13 +33,6 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <ul class="navbar-nav ml-auto mt-lg-0 h5">
                     <li class="nav-item">
-                      <router-link to="/about">
-                        <a class="nav-link font-weight-bold" href="#"
-                          >關於我們</a
-                        >
-                      </router-link>
-                    </li>
-                    <li class="nav-item">
                       <router-link to="/news">
                         <a class="nav-link font-weight-bold" href="#"
                           >最新消息</a
@@ -74,7 +67,10 @@
                           <div class="d-flex justify-content-md-end">
                             <div class="mr-5">
                               <a href="#" class="mr-1">
-                                <i class="fab fa-facebook-square fa-2x "></i>
+                                <i
+                                  class="fab fa-facebook-square fa-2x "
+                                  style="color:#1877F2;"
+                                ></i>
                               </a>
                               <a href="#" class="">
                                 <i
