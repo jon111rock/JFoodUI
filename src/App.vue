@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <!-- header -->
-    <section class="header">
+    <header class="header sticky-top">
       <!-- Navbar -->
-      <div
-        class="container-fluid  fixed-top shadow-sm p-1"
-        style="background: #fdf5e0;"
-      >
+      <div class="container-fluid  shadow-sm p-1" style="background: #fdf5e0;">
         <div class="row">
           <div class="col-sm-1 col-md-12">
             <div class="col">
@@ -65,11 +62,11 @@
                           <div class="d-flex justify-content-md-end">
                             <div class="mr-5">
                               <a href="#" class="mr-1">
-                                <i class="fab fa-facebook-square fa-lg "></i>
+                                <i class="fab fa-facebook-square fa-2x "></i>
                               </a>
                               <a href="#" class="">
                                 <i
-                                  class="fab fa-line fa-lg"
+                                  class="fab fa-line fa-2x"
                                   style="color:green;"
                                 ></i>
                               </a>
@@ -85,26 +82,17 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+    </header>
     <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
 }
 
 #nav a {

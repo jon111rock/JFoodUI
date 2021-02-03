@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          test
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script>
+export default {};
+</script>
+<style lang="css" scoped></style>

@@ -6,7 +6,6 @@
         id="carouselExampleControls"
         class="carousel slide "
         data-ride="carousel"
-        style="margin-top:100px;"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
