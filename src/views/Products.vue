@@ -2,14 +2,20 @@
   <div class="about">
     <div class="container">
       <div class="row">
-        <!-- product navbar -->
+        <!-- ProductType navbar -->
         <section class="product-nav col-md-2">
           <div class="row justify-content-center mt-2">
             <nav class="nav flex-column ">
-              <a class="nav-link active" href="#">青蔥廚房 | 閃耀上市</a>
-              <a class="nav-link " href="#">一野燒肉 | 2020人氣</a>
-              <a class="nav-link" href="#">有種味 | 懷念好滋味</a>
-              <a class="nav-link" href="#">老公便當 | 即將上市</a>
+              <div v-for="(item, key) in productTypes" :key="key">
+                <a
+                  class="nav-link"
+                  :class="{ active: currentActiveBtn == key }"
+                  style="cursor:pointer;"
+                  @click="changeProductType(item, key)"
+                >
+                  {{ item.name }}
+                </a>
+              </div>
             </nav>
           </div>
         </section>
@@ -77,6 +83,54 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      productTypes: [],
+      products: [],
+      currentType: {},
+      currentActiveBtn: 0,
+    };
+  },
+  mounted() {
+    this.getProductTypes();
+    this.getProducts();
+  },
+  methods: {
+    getProducts() {
+      var vm = this;
+      this.products = [];
+      this.axios
+        .get("https://localhost:5001/api/products")
+        .then((res) => {
+          res.data.forEach((i) => {
+            if (i.productTypeId == vm.currentType.productTypeId) {
+              vm.products.push(i);
+            }
+          });
+          console.log(this.products);
+        })
+        .catch((err) => {
+          console.log("取得產品失敗", err);
+        });
+    },
+    getProductTypes() {
+      this.axios
+        .get("https://localhost:5001/api/producttypes")
+        .then((res) => {
+          this.productTypes = res.data;
+          this.currentType = this.productTypes[0];
+        })
+        .catch((err) => {
+          console.log("取得類別失敗", err);
+        });
+    },
+    changeProductType(item, key) {
+      this.currentActiveBtn = key;
+      this.currentType = item;
+      this.getProducts();
+    },
+  },
+};
 </script>
 <style lang="css" scoped></style>

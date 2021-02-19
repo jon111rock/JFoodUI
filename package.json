@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
@@ -16,6 +17,7 @@
     "popper.js": "^1.16.1",
     "sass-loader": "^10.1.1",
     "vue": "^2.6.11",
+    "vue-axios": "^3.2.4",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

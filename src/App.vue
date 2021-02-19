@@ -49,7 +49,7 @@
                     <li class="nav-item">
                       <router-link to="/delivery">
                         <a class="nav-link font-weight-bold" href="#"
-                          >外送服務</a
+                          >生鮮食材</a
                         >
                       </router-link>
                     </li>
